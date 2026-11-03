@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Desktop alerts: fireworks and a green edge flash">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#111C2E"/>
+    </linearGradient>
+    <radialGradient id="edge" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0.55" stop-color="#15803D" stop-opacity="0"/>
+      <stop offset="0.9" stop-color="#15803D" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#15803D" stop-opacity="0.85"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+  </defs>
+
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bg)"/>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#edge)" filter="url(#soft)"/>
+  <rect x="3.1" y="3.1" width="57.8" height="57.8" rx="13" fill="none" stroke="#22C55E" stroke-opacity="0.78" stroke-width="1.5"/>
+
+  <g stroke-linecap="round">
+    <g stroke="#22C55E" stroke-width="2.1">
+      <path d="M32 32 L32 18"/><path d="M32 32 L32 46"/>
+      <path d="M32 32 L18 32"/><path d="M32 32 L46 32"/>
+    </g>
+    <g stroke="#FACC15" stroke-width="1.7" stroke-opacity="0.95">
+      <path d="M32 32 L42.5 21.5"/><path d="M32 32 L21.5 42.5"/>
+    </g>
+    <g stroke="#38BDF8" stroke-width="1.7" stroke-opacity="0.95">
+      <path d="M32 32 L42.5 42.5"/><path d="M32 32 L21.5 21.5"/>
+    </g>
+    <g stroke="#FFFFFF" stroke-width="1.2" stroke-opacity="0.85">
+      <path d="M32 32 L39 17.6"/><path d="M32 32 L46.4 25"/>
+      <path d="M32 32 L46.4 39"/><path d="M32 32 L39 46.4"/>
+      <path d="M32 32 L25 46.4"/><path d="M32 32 L17.6 39"/>
+      <path d="M32 32 L17.6 25"/><path d="M32 32 L25 17.6"/>
+    </g>
+  </g>
+
+  <g fill="#FFFFFF">
+    <circle cx="32" cy="32" r="2.6"/>
+  </g>
+  <g fill="#22C55E">
+    <circle cx="32" cy="16.6" r="1.6"/><circle cx="32" cy="47.4" r="1.6"/>
+    <circle cx="16.6" cy="32" r="1.6"/><circle cx="47.4" cy="32" r="1.6"/>
+  </g>
+  <g fill="#FACC15">
+    <circle cx="43.6" cy="20.4" r="1.3"/><circle cx="20.4" cy="43.6" r="1.3"/>
+  </g>
+  <g fill="#38BDF8">
+    <circle cx="43.6" cy="43.6" r="1.3"/><circle cx="20.4" cy="20.4" r="1.3"/>
+  </g>
+</svg>

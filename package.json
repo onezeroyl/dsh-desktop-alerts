@@ -1,0 +1,63 @@
+{
+  "name": "dsh-desktop-alerts",
+  "version": "0.3.7",
+  "type": "module",
+  "description": "Desktop effect alerts for dsh: full-screen fireworks when a turn finishes, a thin deep-green breathing border while an approval or question waits on you, and a green highlight on unread session rows.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "notification",
+    "desktop",
+    "overlay",
+    "fireworks",
+    "approval",
+    "unread",
+    "windows"
+  ],
+  "license": "MIT",
+  "author": "onezeroyl",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onezeroyl/dsh-desktop-alerts.git"
+  },
+  "homepage": "https://github.com/onezeroyl/dsh-desktop-alerts#readme",
+  "bugs": {
+    "url": "https://github.com/onezeroyl/dsh-desktop-alerts/issues"
+  },
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "widget",
+    "locale",
+    "LICENSE",
+    "PUBLISHING.md",
+    "icon.svg",
+    "assets",
+    "cordis.patch.yml",
+    "CONTRACT.md",
+    "README.md"
+  ],
+  "icon": "./icon.svg",
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

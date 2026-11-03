@@ -1,0 +1,35 @@
+- insert:
+    - id: dsh-desktop-alerts
+      name: 'dsh-desktop-alerts'
+      config:
+        enabled: true
+        # 写 host.log（排查"为什么没闪"时改成 true）
+        debug: false
+        triggers:
+          approval: true
+          question: true
+          planReview: true
+          done: true
+          error: true
+        # 纯氛围提醒，没有任何卡片：完成→烟花，审批→深绿边闪，出错→一次性红闪
+        celebrate:
+          enabled: true
+          # 连续两次完成的最小间隔，避免批量任务刷屏
+          cooldownMs: 800
+        effects:
+          fireworks: true
+          edgeFlash: true
+        # 会话列表里"有未读回答"的会话整行染深绿；点开该会话或再提问即恢复
+        unreadHighlight:
+          enabled: true
+        # 原生透明特效层：页面不在前台时由它把烟花/红闪画到屏幕上
+        overlay:
+          autoStart: true
+        quietHours:
+          enabled: false
+          start: '23:00'
+          end: '08:00'
+        sound:
+          enabled: false
+        # 待审批项在 /state 里保留多久（只影响红闪亮多久，不影响审批本身）
+        pendingTtlMs: 300000

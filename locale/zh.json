@@ -1,0 +1,9 @@
+{
+  "deskAlerts": {
+    "approvalFx": "需要你的审批（屏幕四周红闪）",
+    "planReviewFx": "计划待确认（屏幕四周琥珀闪）",
+    "doneFx": "任务完成（烟花）",
+    "errorFx": "任务出错（红闪）",
+    "quiet": "免打扰中"
+  }
+}

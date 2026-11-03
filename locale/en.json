@@ -1,0 +1,9 @@
+{
+  "deskAlerts": {
+    "approvalFx": "Approval needed (red edge flash)",
+    "planReviewFx": "Plan needs review (amber edge flash)",
+    "doneFx": "Task finished (fireworks)",
+    "errorFx": "Task failed (red flash)",
+    "quiet": "Quiet hours"
+  }
+}

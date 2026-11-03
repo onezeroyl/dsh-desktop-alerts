@@ -1,0 +1,9 @@
+# 提交给 awesome-dsh-plugin：一个文件就是全部投稿。
+# 复制到 fork 的 data/plugins/onezeroyl__dsh-desktop-alerts.yml 后再提 PR。
+url: https://github.com/onezeroyl/dsh-desktop-alerts
+name: onezeroyl/dsh-desktop-alerts
+category: notify
+description:
+  en: 'Desktop effect alerts: full-screen fireworks when a turn finishes, a thin deep-green breathing border while an approval or question waits on you, and a green highlight on unread session rows.'
+  zh: 桌面特效提醒：会话完成放全屏烟花，需要审批或回答时屏幕四周贴着 58px 深绿呼吸，未读回答的会话在列表里整行深绿，页面切走后由原生覆盖层在多屏上接着画。
+icon: https://raw.githubusercontent.com/onezeroyl/dsh-desktop-alerts/main/assets/icon-180.png
